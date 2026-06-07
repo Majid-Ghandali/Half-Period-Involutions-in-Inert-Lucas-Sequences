@@ -45,7 +45,7 @@ sage verify_theorem_pipeline.sage
 ## Outputs
 ​The execution automatically benchmarks representative sequences (Fibonacci, Pell, etc.) and performs a systematic scan over doubly-inert Fibonacci primes up to p \le 200, exporting full verifiable matrices to:
 ​Theorem_pipeline_verification.csv (For tabular integration)
-​Theorem_pipeline_verification.json (For exact reproducibility payload)
+​Theorem_pipeline_verification.json (For exact reproducibility payload).
 
 
 ​## Citation
