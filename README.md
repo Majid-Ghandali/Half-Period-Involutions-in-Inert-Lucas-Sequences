@@ -50,4 +50,20 @@ sage verify_theorem_pipeline.sage
 ## Citation 
 
 If you utilize this artifact or the theoretical results in your academic work, please cite the main manuscript and this software package:
+@article{ghandali2026half,
+  author  = {Ghandali, Majid},
+  title   = {Half-Period Involutions in Inert Lucas Sequences},
+  journal = {Journal of Number Theory (Preprint)},
+  year    = {2026}
+}
+
+@software{ghandali_artifact_2026,
+  author       = {Ghandali, Majid},
+  title        = {Computational Companion for "Half-Period Involutions in Inert Lucas Sequences"},
+  month        = jun,
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.XXXXXXX},
+  url          = {[https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)}
+}
 
