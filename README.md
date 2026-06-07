@@ -47,8 +47,8 @@ sage verify_theorem_pipeline.sage
 ​Theorem_pipeline_verification.csv (For tabular integration)
 ​Theorem_pipeline_verification.json (For exact reproducibility payload)
 
-​## Citation
 
+​## Citation
 ​If you utilize this artifact or the theoretical results in your academic work, please cite the main manuscript and this software package:
 @article{ghandali2026half,
   author  = {Ghandali, Majid},
