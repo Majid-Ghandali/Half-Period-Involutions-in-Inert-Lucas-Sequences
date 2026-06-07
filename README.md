@@ -1,14 +1,71 @@
-# Computational Companion Artifact for "Half-Period Involutions in Inert Lucas Sequences"
+# Half-Period Involutions in Inert Lucas Sequences
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the official SageMath computational companion and verification artifact for the manuscript:
-**"Half-Period Involutions in Inert Lucas Sequences"** (Majid Ghandali, 2026).
+Companion repository for the paper **"Half-Period Involutions in Inert Lucas Sequences"** by Majid Ghandali.
 
-## Overview
+---
 
-The primary script `verify_theorem_pipeline.sage` enforces and verifies the strict 7-step algebraic and dynamical pipeline establishing the formal closure of half-period matrix involutions within inert Lucas sequences modulo an odd prime $p$, specifically restricted to the norm-fibre branch $Q \equiv -1 \pmod{p}$.
+## Abstract
+
+This repository accompanies the paper *Half-Period Involutions in Inert Lucas Sequences* and provides a fully reproducible computational verification of the main theorem.
+
+For an odd prime $p$, consider a Lucas sequence $U_n(P,Q)$ with discriminant:
+$$D=P^2-4Q$$
+
+When:
+$$\chi_p(D)=-1, \qquad Q\equiv -1 \pmod p$$
+
+the associated companion matrix:
+$$A=\begin{pmatrix} P & -Q \\ 1 & 0 \end{pmatrix}$$
+
+satisfies the structural identity:
+$$A^{T/2}=-I$$
+
+where $T$ denotes the spectral period of the inert eigenvalue. This involution induces exact half-period sign reversal:
+$$U_{n+T/2}\equiv -U_n \pmod p$$
+
+and consequently yields exact cancellation of all odd observables over a full orbit. The repository contains verification scripts, numerical examples, exported datasets, and reproducible computational artifacts corresponding to every step of the proof pipeline.
+
+---
+
+## Main Theorem
+
+Let $D=P^2-4Q$, and let $p$ be an odd prime satisfying:
+$$\chi_p(D)=-1, \qquad Q\equiv -1 \pmod p$$
+
+If $\lambda$ is a root of $x^2-Px+Q$ in $\mathbb{F}_{p^2}$ and $T=\operatorname{ord}(\lambda)$, then:
+$$A^{T/2}=-I$$
+
+Consequently:
+$$U_{n+T/2}\equiv -U_n \pmod p$$
+$$V_{n+T/2}\equiv -V_n \pmod p$$
+
+and every odd observable cancels exactly over a complete orbit.
+
+---
+
+## Proof Pipeline
+
+The computational artifact mirrors the logical structure of the paper:
+
+```text
+[Inertness]
+    ↓
+[Norm identity: λ^(p+1) = -1]
+    ↓
+[-1 ∈ <λ>]
+    ↓
+[Unique involution]
+    ↓
+[λ^(T/2) = -1]
+    ↓
+[A^(T/2) = -I]
+    ↓
+[Anti-periodicity]
+    ↓
+[Exact cancellation]
 [Step 1: Inertness] ---> [Step 2: F_{p^2} Realization] ---> [Step 3: Norm-Fibre Identity]
 |
 [Step 6: Anti-Periodicity] <--- [Step 5: Matrix Bridge] <--- [Step 4: Unique Involution]
