@@ -36,18 +36,18 @@ To run this computational proof structure, you need to have **SageMath** (v9.0 o
 git clone [https://github.com/Majid-Ghandali/lucas-half-period-involutions.git](https://github.com/Majid-Ghandali/lucas-half-period-involutions.git)
 cd lucas-half-period-involutions
 ```
-Usage
+## Usage
 ​Execute the main verification pipeline directly via SageMath:
 
 ```bash
 sage verify_theorem_pipeline.sage
 ```
-Outputs
+## Outputs
 ​The execution automatically benchmarks representative sequences (Fibonacci, Pell, etc.) and performs a systematic scan over doubly-inert Fibonacci primes up to p \le 200, exporting full verifiable matrices to:
 ​Theorem_pipeline_verification.csv (For tabular integration)
 ​Theorem_pipeline_verification.json (For exact reproducibility payload)
 
-​Citation
+​## Citation
 ​If you utilize this artifact or the theoretical results in your academic work, please cite the main manuscript and this software package:
 @article{ghandali2026half,
   author  = {Ghandali, Majid},
